@@ -5,13 +5,13 @@ pipeline{
         stage("Code Clone"){
             steps{
                 echo "Code Clone Stage"
-                git url: "https://github.com/LondheShubham153/node-todo-cicd.git", branch: "master"
+                git url: "https://github.com/sakshi8262/cdac_project.git", branch: "master"
             }
         }
         stage("Code Build & Test"){
             steps{
                 echo "Code Build Stage"
-                sh "docker build -t node-app ."
+                sh "docker build -t node-app-todo-11 ."
             }
         }
         stage("Push To DockerHub"){
