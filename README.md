@@ -17,4 +17,3 @@ or Run by docker compose
 
 test
 
-# cdac_project

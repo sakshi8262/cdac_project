@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  web:
+    image: sakshiipatill/node-app-todo-1:latest
+    ports:
+      - "8000:8000"
