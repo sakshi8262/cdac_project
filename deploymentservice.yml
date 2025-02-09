@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: nodeapp-deployment
   labels:
-    app: node-app-todo-1
+    app: node-app-todo-11
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: node-app-todo-1
+      app: node-app-todo-11
   template:
     metadata:
       labels:
-        app: node-app-todo-1 
+        app: node-app-todo-11
     spec:
       containers:
-      - name: node-app-todo-1
-        image: sakshiipatill/node-app-todo-1:latest
+      - name: node-app-todo-11
+        image: sakshiipatill/node-app-todo-11:latest
         ports:
         - containerPort: 3000
         
@@ -26,10 +26,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: node-app-todo-1
+  name: node-app-todo-11
 spec:
   selector:
-    app: node-app-todo-1 
+    app: node-app-todo-11
   type: LoadBalancer
   ports:
   - protocol: TCP
