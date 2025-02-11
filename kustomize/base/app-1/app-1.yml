@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: app-1-containter
-        image: trainwithshubham/node-app-test-new:latest
+        image: sakshiipatill/node-app-test-new:latest
         imagePullPolicy: Always
 ---
 apiVersion: v1
